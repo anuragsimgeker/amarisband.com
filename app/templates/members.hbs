@@ -1,0 +1,18 @@
+<div class="row m-t-10 m-l-10 m-r-0">
+	<div class="col-md-3">
+		<h2><span class="glyphicon glyphicon-user f-c-accent-100 m-r-10"></span>Band members</h2>
+	</div>
+</div>
+
+{{#each}}
+<div class="member row m-l-10 m-r-0">
+		<div class="col-md-4">
+			<img style="display: inline-block;" class="member-photo" {{bind-attr src=photoUrl}}>
+		</div>
+		<div class="col-md-8 m-t-60">
+			<h4><strong>{{firstName}} {{lastName}}</strong></h4>
+			<h5>{{instrument}}</h5>
+			<p>{{bio}}<p>
+		</div>
+	</div>
+{{/each}}

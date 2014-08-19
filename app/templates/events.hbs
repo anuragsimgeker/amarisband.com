@@ -1,0 +1,57 @@
+<div class="row m-t-10 m-l-10 m-r-0">
+	<div class="col-md-3">
+		<h2><span class="glyphicon glyphicon-calendar f-c-accent-100 m-r-10"></span>Events</h2>
+	</div>
+</div>
+
+<div class="row m-l-10 m-r-0 m-t-20">
+	<div class="col-md-3">
+		<h4>Upcoming Events</h4>
+	</div>
+</div>
+{{#each upcomingEvents}}
+	<div class="event row">
+		<div class="col-md-1">
+			{{cal-month-date datetime=start_time}}
+		</div>
+		<div class="col-md-1">
+			<img class="event-cover" {{bind-attr src=cover.source}}>
+		</div>
+		<div class="col-md-9">
+			<h4><strong>{{name}}</strong></h4>
+			<h5>{{location}} in {{venue.city}}, {{venue.state}}</h5>
+			<h6>{{time-ampm datetime=start_time}}</h6>
+			{{#if description}}<p>{{description}}<p>{{/if}}
+		</div>
+		<div class="col-md-1">
+			{{#if ticket_uri}}<small class="p-t-30"><a {{bind-attr href=ticket_uri}}>Find tickets</a></small>{{/if}}
+		</div>
+	</div>
+{{/each}}
+
+<hr/>
+
+<div class="row m-l-10 m-r-0 m-t-20">
+	<div class="col-md-3">
+		<h4>Past Events</h4>
+	</div>
+</div>
+{{#each pastEvents}}
+	<div class="event row">
+		<div class="col-md-1">
+			{{cal-month-date datetime=start_time}}
+		</div>
+		<div class="col-md-1">
+			<img class="event-cover" {{bind-attr src=cover.source}}>
+		</div>
+		<div class="col-md-9">
+			<h4><strong>{{name}}</strong></h4>
+			<h5>{{location}} in {{venue.city}}, {{venue.state}}</h5>
+			<h6>{{time-ampm datetime=start_time}}</h6>
+			{{#if description}}<p>{{description}}<p>{{/if}}
+		</div>
+		<div class="col-md-1">
+			{{#if ticket_uri}}<small class="p-t-30"><a {{bind-attr href=ticket_uri}}>Find tickets</a></small>{{/if}}
+		</div>
+	</div>
+{{/each}}

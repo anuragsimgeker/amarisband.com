@@ -1,0 +1,42 @@
+.events {
+
+	.cal-month-date {
+		text-align: center;
+		margin-left: 15px;
+		.cal-month {
+			.f-c-danger();
+			.capitalize();
+			font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			font-weight: 500;
+		}
+
+		.cal-date {
+			font-weight: 200;
+			font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			margin-top: -12px;
+		}
+	}
+
+	hr {
+		border-color: @black;
+	}
+
+	.event {
+		margin-right: 0;
+		padding: 20px 0;
+		border-width: 0 0 0px;
+		border-style: solid;
+		border-color: @black;
+
+		.event-cover {
+			width: 80px;
+			height: 80px;
+		}
+	}
+
+	.event:last-child {
+		border-width: 0px;
+	}
+
+}
+

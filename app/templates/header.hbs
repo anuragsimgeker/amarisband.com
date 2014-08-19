@@ -1,0 +1,39 @@
+<div class="navbar navbar-default navbar-fixed-top app-header" role="navigation">
+	{{#link-to 'index' class='navbar-brand'}}
+		<img class="logo" src="assets/images/amaris-logo.svg">
+	{{/link-to}}
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li>
+					{{#link-to 'events'}}Events{{/link-to}}
+				</li>
+				<li>
+					{{#link-to 'members'}}Band{{/link-to}}
+				</li>
+				<li>
+					{{#link-to 'music'}}Music{{/link-to}}
+				</li>
+				<li>
+					{{#link-to 'photos'}}Photos{{/link-to}}
+				</li>
+				<li>
+					{{#link-to 'videos'}}Video{{/link-to}}
+				</li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a><div class="fb-like" data-colorscheme="dark"  data-href="https://www.facebook.com/thebandamaris" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

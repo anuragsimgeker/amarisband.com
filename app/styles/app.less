@@ -1,0 +1,22 @@
+@import "vendor/bootstrap/less/bootstrap.less";
+@import "bootstrap-custom/bootstrap.less";
+@import "atomic/main.less";
+
+@import "header.less";
+@import "footer.less";
+
+@import "index.less";
+@import "events.less";
+@import "members.less";
+
+.non-modal-container {
+	padding-top: 100px;
+	@media (max-width: @grid-float-breakpoint-max) {
+		padding-top: 52px;
+	}
+
+	.col-centered {
+	    float: none;
+	    margin: 0 auto;
+	}
+}
