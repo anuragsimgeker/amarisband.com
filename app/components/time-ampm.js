@@ -6,7 +6,7 @@ default Ember.Component.extend({
     layoutName: 'time-ampm',
 
     dateTimeObject: function() {
-        return new Date(this.get('datetime') || new Date().getTime());
+        return new Date(moment(this.get('datetime')) || new Date().getTime());
     }.property('datetime'),
 
     hours: function() {

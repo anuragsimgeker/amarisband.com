@@ -9,7 +9,7 @@ default Ember.ArrayController.extend({
         var result = [];
 
         this.get('content').forEach(function(_event) {
-            var start_time = new Date(_event.start_time),
+            var start_time = moment(_event.get('start_time')),
                 now = new Date();
             if (start_time <= now) {
                 result.push(_event);
@@ -23,7 +23,7 @@ default Ember.ArrayController.extend({
         var result = [];
 
         this.get('content').forEach(function(_event) {
-            var start_time = new Date(_event.start_time),
+            var start_time = moment(_event.get('start_time')),
                 now = new Date();
             if (start_time > now) {
                 result.push(_event);
