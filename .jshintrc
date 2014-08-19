@@ -2,7 +2,12 @@
   "predef": {
     "document": true,
     "window": true,
-    "AmarisbandENV": true
+    "AmarisbandENV": true,
+    "jQuery": true,
+    "Ember": true,
+    "Handlebars": true,
+    "DS": true,
+    "moment": true
   },
   "browser" : true,
   "boss" : true,
@@ -28,11 +33,5 @@
   "white": false,
   "eqnull": true,
   "esnext": true,
-  "unused": true,
-  "globals": {
-      "jQuery": true,
-      "Ember": true,
-      "Handlebars": true,
-      "DS": true
-    }
+  "unused": true
 }
