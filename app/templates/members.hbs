@@ -5,14 +5,17 @@
 </div>
 
 {{#each}}
+{{#unless pastMember}}
 <div class="member row m-l-10 m-r-0">
-		<div class="col-md-4">
-			<img style="display: inline-block;" class="member-photo" {{bind-attr src=photoUrl}}>
-		</div>
-		<div class="col-md-8 m-t-60">
-			<h4><strong>{{firstName}} {{lastName}}</strong></h4>
-			<h5>{{instrument}}</h5>
-			<p>{{bio}}<p>
-		</div>
+	<div class="col-md-4">
+		<img style="display: inline-block;" class="member-photo" {{bind-attr src=photoUrl}}>
 	</div>
+	<div class="col-md-8 m-t-60">
+		<h4><strong>{{firstName}} {{lastName}}</strong></h4>
+		<h5>{{instrument}}</h5>
+		<p>{{bio}}<p>
+	</div>
+</div>
+{{/unless}}
 {{/each}}
+
