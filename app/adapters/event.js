@@ -3,7 +3,7 @@ import ApplicationAdapter from 'amarisband/adapters/application';
 export
 default ApplicationAdapter.extend({
 
-    host: 'http://162.243.144.142',
+    host: 'http://boxplot.co',
 
     ajax: function(url, type, hash) {
         url = url.replace('/events', '/amarisband/facebook.php');
