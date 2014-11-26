@@ -8,15 +8,15 @@ default BaseRoute.extend({
             firstName: 'Anurag',
             lastName: 'Simgeker',
             photoUrl: 'assets/images/anurag.jpg',
-            instrument: 'Bass',
-            bio: ''
+            instrument: 'Bass/Guitars',
+            bio: 'Self taught guitarist, bassist, and recording engineer.'
         }, {
             id: 2,
             firstName: 'Danielle',
             lastName: 'Day',
             photoUrl: 'assets/images/danielle.jpg',
             instrument: 'Violin',
-            bio: ''
+            bio: 'Classically trained since the age of nine, Danielle has been playing violin for most of her life. Although the majority of her performances have been in more traditional metal acts playing guitar or bass, Amaris is the perfect fusion of her two passions; metal and violin. Her compositions are heavily influenced from her years studying music theory and creating pieces for entire philharmonic orchestras.'
         }, {
             id: 3,
             firstName: 'Derek',
@@ -30,6 +30,7 @@ default BaseRoute.extend({
             lastName: 'Garymore',
             photoUrl: 'assets/images/drew.jpg',
             instrument: 'Keyboards',
+            pastMember: true,
             bio: ''
         }, {
             id: 5,
@@ -44,7 +45,7 @@ default BaseRoute.extend({
             lastName: 'Cruses',
             photoUrl: 'assets/images/judy.jpg',
             instrument: 'Violin',
-            bio: ''
+            bio: 'As a music instructor at Music Time Academy, I teach students ages three to adult violin, voice or beginning piano. My students are taught fundamental skills to gain instrument proficiency. All students are highly encouraged to perform two yearly recitals in front of a wide audience of eighty to two hundred people. My goal as a teacher is to have my students enjoy and learn the art of making music. Together, we learn how to have music enrich your lives in a fun yet structured manner.'
         }, {
             id: 7,
             firstName: 'Susan',
@@ -59,6 +60,14 @@ default BaseRoute.extend({
             photoUrl: 'assets/images/shari.jpg',
             instrument: 'Vocals',
             pastMember: true,
+            bio: ''
+        }, {
+            id: 9,
+            firstName: 'Nova',
+            lastName: 'Jimenez',
+            photoUrl: 'assets/images/amaris-logo.svg',
+            instrument: 'Vocals',
+            pastMember: false,
             bio: ''
         }];
     }

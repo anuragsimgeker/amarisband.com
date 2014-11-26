@@ -7,10 +7,10 @@
 {{#each}}
 {{#unless pastMember}}
 <div class="member row m-l-10 m-r-0">
-	<div class="col-md-4">
-		<img style="display: inline-block;" class="member-photo" {{bind-attr src=photoUrl}}>
+	<div class="col-md-4 col-sm-4 col-xs-6">
+		<img style="display: inline-block;" class="member-photo p-20" {{bind-attr src=photoUrl}}>
 	</div>
-	<div class="col-md-8 m-t-60">
+	<div class="col-sm-8 col-md-8 col-xs-6 p-20">
 		<h4><strong>{{firstName}} {{lastName}}</strong></h4>
 		<h5>{{instrument}}</h5>
 		<p>{{bio}}<p>
