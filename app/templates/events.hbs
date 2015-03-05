@@ -28,6 +28,12 @@
 			{{#if ticket_uri}}<small class="p-t-30"><a {{bind-attr href=ticket_uri}}><span class="f-c-accent-100 glyphicon glyphicon-tag"></span> Find tickets</a></small>{{/if}}
 		</div>
 	</div>
+	{{else}}
+	<div class="row m-l-10">
+		<div class="col-md-1 text-info">
+			<h5>No events</h5>
+		</div>
+	</div>
 {{/each}}
 
 <hr/>
@@ -53,6 +59,12 @@
 		</div>
 		<div class="col-md-1">
 			{{#if ticket_uri}}<small class="p-t-30"><a {{bind-attr href=ticket_uri}}>Find tickets</a></small>{{/if}}
+		</div>
+	</div>
+	{{else}}
+	<div class="row m-l-10">
+		<div class="col-md-1 text-info">
+			<h5>No events</h5>
 		</div>
 	</div>
 {{/each}}
